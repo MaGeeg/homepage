@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+</head>
+
+<body>
+        <main>
+                <header>
+                        <h1>
+                                Moja Strona domowa
+                        </h1>
+                </header>
+
+                <section>
+                        <h2>Kim Jestem</h2>
+                        <p>
+                                Powiedz mi kim jestem.
+                                Jestem osobą proaktywną. Zauważam trudności, ale skupiam się na rozwiązaniach.
+                        </p>
+                </section>
+
+                <section>
+                        <h2>Pamiętniczek</h2>
+                        <section>
+                                <h3> Jak stworzyc HTML</h3>
+                                <p>
+                                        Ten tydzień jest bardzo ciekawy podjąłem wyzwanie przerobienie kursu WTF. Ciekaw
+                                        jestem jak mi pójdzie i ile z tego co robię będę umieć zastosować w praktyce.
+                                        Czekam na rozstrzygnięcie konkursu na mentora. Czy wygram coś w końcu tak po
+                                        prostu?
+                                </p>
+                        </section>
+
+                        <section>
+                                <h3> Czy nagrywanie szkolenia to prosta sprawa</h3>
+                                <p>Biorę udział w licznych webinarach i taka myśl przyszła mi do glowy:). Dzisiaj znów
+                                        wezme udział i warto byłoby nagrać, nie wszystko pamiętam.</p>
+                        </section>
+
+                        <section>
+                                <h3> Dzień Pierwszy </h3>
+                                <p>Przerobiłem wszystkie lekcje z części 1 :)</p>
+                        </section>
+
+                        <section>
+                                <h3>Dzień Drugi</h3>
+                                <p>Przerobiłem wszystkie lekcje z części 2. Zadanie domowe mi pozostało. </p>
+                        </section>
+                </section>
+
+                <footer>
+                        wszystkie moje tresci WTF
+                </footer>
+
+        </main>
+</body>
+
+</html>
+
+
+
+
+
+
+* Aktualizacja
+
+W celu zaktualizowania oprogramowania CryptoCard Suite należy uruchomić pakiet
+instalacyjny i zainstalować oprogramowanie w tym samym katalogu, w jakim
+znajduje się już istniejąca jego wersja.
+
+* Instalacja po raz pierwszy
+
+Należy uruchomić pakiet instalacyjny oraz postępować według instrukcji.
+
+UWAGA: W obu przypadkach konieczne może okazać się ponowne uruchomienia systemu
+operacyjnego w celu pełnego zakończenia procesu instalacji.
+
+=============================================
+5. Uwagi dotyczące kart CryptoCard multiSIGN:
+=============================================
+
+* Zależnie od platformy karty elektronicznej i wersji profilu karty CryptoCard
+multiSIGN, z którą współpracuje oprogramowanie CryptoCard Suite, mogą występować
+specyficzne różnice lub ograniczenia dotyczące maksymalnej ilości kluczy,
+certyfikatów, wielkości dostępnej pamięci, ilości i długości kodów PIN/PUK itp.
+
+* Najważniejszym ograniczeniem dla części kwalifikowanej (SSCD) kart CryptoCard
+multiSIGN wyposażonych w system SetCOS 4.4.1 a2 (aplikacja karty zgodna z
+profilem SetEID) jest pojedynczy klucz RSA, bez możliwości jego skasowania oraz
+jeden aktywny certyfikat tego klucza.
+
+* Jakakolwiek modyfikacja zawartości części kwalifikowanej (poza zmianą kodu
+PIN) możliwa jest wyłącznie w środowisku informatycznym wystawcy certyfikatu
+kwalifikowanego znajdującego się w tej części karty
+
+* Na kartach CryptoCard multiSIGN wyposażonych w system SetCOS 4.4.1 a2 klucz
+prywatny importowany z pliku PKCS#12 jest przechowywany, jako obiekt binarny
+chroniony kodem PIN użytkownika
+
+* PUK (Personal Unlocking Key) jest ustalany tylko raz - w trakcie procesu
+aktywacji części kwalifikowanej karty. Późniejsza jego zmiana jest niemożliwa.
+Jego długość to 8 znaków. 
+
+* W przypadku karty CryptoCard multiSIGN V3 w części niekwalifikowanej
+dotychczasowy kod SO PIN został zastąpiony niezmienialnym kodem PUK. Jego
+fabryczna długość to 4 znaki.
+
+=======================
+6. FAQ oraz Baza wiedzy 
+=======================
+
+W przypadku pojawienia się problemów z oprogramowaniem CryptoCard Suite,
+zalecane jest w pierwszej kolejności zaznajomienie się z FAQ oraz Bazą Wiedzy:
+
+http://www.cryptotech.com.pl/Pomoc_techniczna/FAQ,content.html
+
+Wszystkie ogólnie znane problemy oraz ich rozwiązania są dostępne na powyższej
+stronie.
+
+====================================================
+7. Pomoc Techniczna oraz Formularz zgłaszania błędów
+====================================================
+
+* Pomoc techniczna dla użytkowników CryptoCard Suite:
+
+http://www.cryptotech.com.pl/Pomoc_techniczna/Pomoc_techniczna,content.html
+
+
+* Formularz zgłaszania błędów:
+
+http://www.cryptotech.com.pl/Pomoc_techniczna/Formularz_zglaszanie_bledow,content.html
+
+==========
+8. Kontakt
+==========
+
+Oficjalna strona projektu CryptoCard Suite:
+
+http://www.cryptotech.com.pl/Produkty/CryptoCard_Suite,content.html 
+
+===========================
+9. Znane i poprawione błędy
+===========================
+
+Znane błędy:
+CCS/520 - [CSP] Ponowne logowanie do RDP przy użyciu innej karty podowuje błąd (dotyczy systemu  Windows 2008 R2).
+
+Poprawione błędy:
+

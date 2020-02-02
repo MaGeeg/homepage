@@ -55,6 +55,9 @@ body{
 .diaryHeader {
     color: #6c1285;
 }
-.link {
+.navigation__link {
+    color: rgb(4, 39, 29);
+}
+.section__link {
     color: rgb(4, 39, 29);
 }

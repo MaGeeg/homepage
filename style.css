@@ -1,12 +1,14 @@
 body{
     background-color: #fefefe;
     color: #333;
+    max-width: 700px;
+    margin: auto;
 }
  
 
 .mainHeader, .sectionHeader {
     color: #1460aa;
-    font-size: 64px;
+    
 }
 .diaryHeader {
     color: #6c1285;
@@ -18,7 +20,7 @@ p{
 heading {
     color: #00487c;
 }
-.thirdHeader {
+.skills__thirdHeader {
     color: #0496FF;
 }
 

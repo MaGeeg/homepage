@@ -5,28 +5,52 @@ body{
     margin: auto;
 }
  
-
-.mainHeader, .sectionHeader {
+.section__title {
     color: #1460aa;
-    
 }
+.section__title--description {
+    color: darkblue;
+}
+.section__description {
+    width: 700px;
+    color: black;
+}
+.skills__giant {
+    background-color: rgb(252, 142, 8);
+
+}  
+.skills__giant--title {
+    color: rgb(58, 4, 4);
+}
+.skills__giant--description {
+    color: black;
+}
+.skills__tester {
+    background-color: darkorange;
+}
+.skills_tester--title {
+    color: rgb(58, 4, 4);
+}
+.skills__tester--description {
+    color: black;
+}
+.skills__frontend {
+    background-color: rgb(243, 140, 14);
+}
+.skills_frontend--title {
+    color: rgb(58, 4, 4);
+}
+.skills__frontend--description {
+    color: black;
+}
+
+
+
+    
+
 .diaryHeader {
     color: #6c1285;
 }
-
-p{
-    color: darkblue;
-}
-heading {
-    color: #00487c;
-}
-.skills__thirdHeader {
-    color: #0496FF;
-}
-
 .link {
-    color: #1A936F;
-}
-.about {
-    color:	#8B4513;
+    color: rgb(4, 39, 29);
 }

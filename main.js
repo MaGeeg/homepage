@@ -1,6 +1,6 @@
 console.log('siema');
 const name = 'Grego';
-const age = 38;
+const age = 78;
 console.log(name);
 console.log(age);
 console.log(`Nazywam się ${name} i mam ${age} lat`);
@@ -57,7 +57,7 @@ if (age > 70) {
     oldIndicator ='yes';
 } else {
     oldIndicator = 'no';
-}
+}console.log(oldIndicator);
 
 const amIOld = (age > 70) ? 'yes':'no';
 console.log(amIOld);

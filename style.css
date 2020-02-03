@@ -2,9 +2,25 @@ body{
     background-color: #fefefe;
     color: #333;
     max-width: 700px;
-    margin: auto;
+    margin: 32px auto;
 }
- 
+.navigation {
+    bakcground: #fff;
+    box-sizing: border-box;
+    left: 0;
+    padding: 16p;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.navigation__link {
+    color: rgb(4, 39, 29);
+}
+.main {
+    display: block;
+    padding-top: 50px;
+   
+} 
 .section__title {
     color: #1460aa;
 }
@@ -12,9 +28,10 @@ body{
     color: darkblue;
     font-size: 20px;
 }
-.section__description {
-    width: 700px;
+.section__paragraph {
     color: black;
+    width: 700px;
+    
 }
 .skills__giant {
     background-color: rgb(252, 142, 8);
@@ -55,9 +72,7 @@ body{
 .diaryHeader {
     color: #6c1285;
 }
-.navigation__link {
-    color: rgb(4, 39, 29);
-}
+
 .section__link {
     color: rgb(4, 39, 29);
 }

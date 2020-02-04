@@ -57,7 +57,37 @@ if (age > 70) {
     oldIndicator ='yes';
 } else {
     oldIndicator = 'no';
-}console.log(oldIndicator);
+}
+console.log(oldIndicator);
 
 const amIOld = (age > 70) ? 'yes':'no';
 console.log(amIOld);
+
+function calculate(x) {
+    x = x + 3;
+    console.log(`tradycyjnie $(x)`);
+    return x * 7
+}
+
+calculate(1);
+
+console.log(calculate(2));
+const myCalculation = calculate(4);
+console.log(myCalculation);
+
+//funkcja strzałkowa
+
+const calculateFat = (x) => {
+    x = x + 3;
+    console.log(`fat: $(x)`);
+    return x * 7
+}
+
+console.log(calculateFat(2));
+
+// funkcja arrow - prostszy zapis
+
+
+const calculateFatNew = x => (x+3)*7;
+console.log(calculateFatNew(2));
+

@@ -8,7 +8,9 @@ html {
 
 
 body{
-    background-color: #fefefe;
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(8,7,103,1) 0%, rgba(0,212,255,1) 0%,
+     rgba(0,233,229,1) 20%, rgba(60,254,8,1) 80%, rgba(62,255,0,1) 100%);
+    background-color: #fefefe; 
     color: #333;
     max-width: 700px;
     margin: 32px auto;
@@ -23,66 +25,89 @@ body{
     width: 100%;
 }
 .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.navigation__item {
+    display: inline;
+    
+}
+
+.navigation__link {
+    color: rgb(4, 39, 29);
+    text-decoration: none;
+}
+
 .navigation__list {
     list-style: none;
     padding: 0;
 }
-.navigation__item {
-    display: inline;
-}
-.navigation__link {
-    color: rgb(4, 39, 29);
-}
+
+
 .main {
     display: block;
     padding-top: 50px;
    
 } 
-.section__title {
-    color: #1460aa;
-}
-.section__title--description {
-    color: darkblue;
-    font-size: 20px;
-}
+
 .section__paragraph {
     color: black;
     width: 700px;
     
 }
+
+.section__title {
+    color: #1460aa;
+}
+
+.section__title--description {
+    color: darkblue;
+    font-size: 20px;
+}
+
 .skills__giant {
     background-color: rgb(252, 142, 8);
 
 }  
+
+.skills__giant--description {
+    color: black;
+}
+
 .skills__giant--title {
     color: rgb(58, 4, 4);
     font-size: 26px;
 }
-.skills__giant--description {
-    color: black;
-}
+
 .skills__tester {
     background-color: darkorange;
 }
+
+.skills__tester--description {
+    color: black;
+}
+
 .skills__tester--title {
     color: rgb(58, 4, 4);
     font-size: 26px;
 }
-.skills__tester--description {
-    color: black;
-}
+
 .skills__frontend {
     background-color: rgb(243, 140, 14);
 }
+
+.skills__frontend--description {
+    color: black;
+}
+
 .skills__frontend--title {
     color: rgb(58, 4, 4);
     font-size: 26px;
 }
-.skills__frontend--description {
-    color: black;
-}
+
 
 
 

@@ -91,3 +91,11 @@ console.log(calculateFat(2));
 const calculateFatNew = x => (x+3)*7;
 console.log(calculateFatNew(2));
 
+//zadanie domowe part. 5
+
+function welcome(name){
+    const name = ${name};
+    const age = ${age};
+    console.log(name);
+    return name(`Witaj ${name} i masz ${age} lat`); 
+}

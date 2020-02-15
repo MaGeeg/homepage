@@ -1,4 +1,4 @@
-console.log('siema');
+/*console.log('siema');
 const name = 'Grego';
 const age = 78;
 console.log(name);
@@ -93,9 +93,75 @@ console.log(calculateFatNew(2));
 
 //zadanie domowe part. 5
 
-function welcome(name){
-    const name = ${name};
-    const age = ${age};
-    console.log(name);
-    return name(`Witaj ${name} i masz ${age} lat`); 
+
+function welcome(name, age){
+    console.log(`Witaj ${name}, masz ${age} lat!`);
 }
+welcome('Maciej', 31);
+
+/*Propozycje Korsi -  funkcja strzałkowa
+const welcome = (name, age) => {
+    console.log(`Witaj ${name}, masz ${age} lat!`)
+}
+welcome('maciek', 31);
+
+const myName= 'Maciek';
+const myAge= 31;
+welcome(myName, myAge);
+*/
+
+/* --- wywołanie button ---*/
+/*const button = document.querySelector('.header__button--js');
+console.log(button)
+
+function handleClick() {
+    console.log('halo')
+}
+
+button.addEventListener('click', handleClick); */
+
+/* --- wywołanie button za pomocą arrow function---*/
+/*
+const button = document.querySelector('.header__button--js');
+console.log(button)
+
+function handleClick() {
+    console.log('halo')
+}
+
+button.addEventListener('click', (e) => {
+    console.log(e);
+    console.log('hello arrow');
+} );
+*/
+/* --- zmieniamy tresc button --- */
+
+const button = document.querySelector('.header__button--js');
+console.log(button)
+
+/* --- Hamburger ---*/
+
+button.addEventListener('click', (e) => {
+    const header = document.querySelector('.section__title--js');
+    header.innerHTML = 'klik, klik';
+    header.classList.toggle('section__title--red');
+    
+    if(header.classList.contains('section__title--red')) {
+        console.log('jest klasa');
+    }else {
+        console.log('brak klasy');
+    };
+    /*alert ('hello'); */
+});
+
+
+
+
+
+const navigationHam = document.querySelector('.navigation__ham--js');
+
+navigationHam.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+    
+});

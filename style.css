@@ -12,27 +12,27 @@ body{
      rgba(0,233,229,1) 20%, rgba(60,254,8,1) 80%, rgba(62,255,0,1) 100%);
     background-color: #fefefe; 
     color: #333;
-    max-width: 700px;
+    
     margin: 32px auto;
 }
 .site-header {
-    bakcground: #fff;
+    background: #fff;
     box-sizing: border-box;
     left: 0;
-    padding: 16p;
+    padding: 16px;
     position: fixed;
     top:0;
     width: 100%;
 }
 .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
 }
 
+/* !!! margin bez przecinka !!!*/
 .navigation__item {
-    display: inline;
+    display: block;
+    margin: 0 16px;
     
 }
 
@@ -44,13 +44,23 @@ body{
 .navigation__list {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* --- klasa sie nie wykonuje bo media queries sa niżej i ja nadpisuje! -----*/
+/* .navigation__list--visible {
+    display: flex;
+} */
 
 
 .main {
     display: block;
     padding-top: 50px;
-   
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 } 
 
 .section__paragraph {
@@ -62,6 +72,11 @@ body{
 .section__title {
     color: #1460aa;
 }
+
+.section__title--red {
+    color: darkred;
+}
+
 
 .section__title--description {
     color: darkblue;
@@ -109,14 +124,109 @@ body{
 }
 
 
-
-
-    
-
 .diaryHeader {
     color: #6c1285;
 }
 
 .section__link {
     color: rgb(4, 39, 29);
+}
+
+/* --- do wwydruku --- 
+@media print {
+    body {
+        background: yellow;
+    }
+}
+
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+/*
+@media screen(max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .section__link {
+        color: hotpink;
+    }
+}
+*/
+/*
+@media screen(min-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .section__link {
+        color: hotpink;
+    }
+}
+*/
+
+/* --- zapis z not odwraca sytuację -----
+@media not screen(min-width: 640px) and (max-width: 1000px)
+*/
+/*
+@media screen (min-width: 640px) and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .section__link {
+        color: hotpink;
+    }
+}
+*/
+/* ---breakpoint --- */
+
+@media (min-width: 1000px) {
+    .main {
+        max-width: 900px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .section__link {
+        color: hotpink;
+    }
+}
+
+@media (max-width: 641px) {
+
+    .navigation__ham {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+    .navigation__item {
+        margin: 16px;
+       
+    }
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+    }
+    .navigation__list--visible {
+        display: flex;
+    } 
+    
+    
+    .site-header {
+        min-height: 48px;
+    }
+
+}
+
+@media(min-width: 640px) {
+    .navigation__ham {
+        display: none;
+    }
 }
